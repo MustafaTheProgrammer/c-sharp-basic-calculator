@@ -6,37 +6,37 @@ namespace calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("I'm a simple claculator that can solve a problem involving two numbers and an operation.");
+            Console.WriteLine("I'm a simple claculator that can solve a problem involving two numbers and an arithmetic operation.");
             Console.WriteLine("Put the first number you'd like for the problem.");
 
-            int firstnum = Console.ReadLine();
+            double firstnum = Console.ReadLine();
 
-            Console.WriteLine("Now put in the operation you'd like to use. Write add, minus, times, or divide, and write it in lowercase.");
+            Console.WriteLine("Now put in the arithmetic operation you'd like to use. Write add, minus, times, or divide, and write it in lowercase.");
 
             String operation = Console.ReadLine();
 
             Console.WriteLine("Now Put the second number.");
 
-            int secondnum = Console.ReadLine();
+            double secondnum = Console.ReadLine();
 
             if (operation = add)
             {
-                int answer = firstnum + secondnum 
+                double answer = firstnum + secondnum 
             }
 
-            if (operation = minus)
+            else if (operation = minus)
             {
-                int answer = firstnum - secondnum 
+                double answer = firstnum - secondnum 
             }
 
-            if (operation = times)
+            else if (operation = times)
             {
-                int answer = firstnum * secondnum 
+                double answer = firstnum * secondnum 
             }
 
-            if (operation = divide)
+            else if (operation = divide)
             {
-                int answer = firstnum / secondnum 
+                double answer = firstnum / secondnum 
             }
 
             Console.WriteLine("The answer to your problem is " + answer);
